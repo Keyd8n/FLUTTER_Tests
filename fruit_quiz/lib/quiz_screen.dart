@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart'; // Імпорт Flutter
 import 'results_screen.dart'; // Імпорт екрану результатів
-import 'score_logic.dart'; // Імпорт логіки підрахунку
 
 class QuizScreen extends StatefulWidget {
   // Віджет екрану тесту
