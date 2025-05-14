@@ -6,7 +6,7 @@ class MainMenu extends StatelessWidget {
   const MainMenu({super.key}); // Конструктор
 
   // Налаштування, які можна змінити
-  final String testTitle = "Який ти фрукт? Тест-жарт"; // Назва тесту
+  final String testTitle = "Який ти блок з Minecraft?"; // Назва тесту
   final String buttonText = "Почати тест"; // Текст кнопки
   final String imagePath = "assets/fruit_basket.png"; // Шлях до зображення
 
@@ -23,7 +23,7 @@ class MainMenu extends StatelessWidget {
             // Градієнтний фон
             begin: Alignment.topLeft, // Початок градієнту
             end: Alignment.bottomRight, // Кінець градієнту
-            colors: [Colors.green, Colors.orange], // Кольори градієнту
+            colors: [Colors.blue, Colors.red], // Кольори градієнту
           ),
         ),
         child: Center(
@@ -158,8 +158,8 @@ class _AnimatedButtonState extends State<AnimatedButton>
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [
-                      Colors.red, // Початковий колір
-                      Colors.lightGreen, // Кінцевий колір
+                      Colors.blue, // Початковий колір
+                      Colors.red, // Кінцевий колір
                     ],
                     stops: [
                       // Анімація блиску через зміну зупинок градієнту
