@@ -89,7 +89,7 @@ class ResultScreen extends StatelessWidget {
                 const SizedBox(height: 10),
                 Text(
                   result['description']!,
-                  style: const TextStyle(fontSize: 18),
+                  style: const TextStyle(fontSize: 16),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),

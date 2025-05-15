@@ -66,14 +66,14 @@ class _QuizScreenState extends State<QuizScreen> {
                 Text(
                   questionText,
                   style: const TextStyle(
-                      fontSize: 25, fontWeight: FontWeight.bold),
+                      fontSize: 21, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
                 ...answers.entries.map(
                   (entry) => RadioListTile<String>(
                     title:
-                        Text(entry.value, style: const TextStyle(fontSize: 22)),
+                        Text(entry.value, style: const TextStyle(fontSize: 18)),
                     value: entry.key,
                     groupValue: _selectedAnswer,
                     activeColor: Colors.black,
@@ -95,7 +95,7 @@ class _QuizScreenState extends State<QuizScreen> {
                           backgroundColor: Colors.black,
                           foregroundColor: Colors.white,
                           textStyle: TextStyle(
-                            fontSize: 20,
+                            fontSize: 17,
                           ),
                         ),
                         child: const Text('Попереднє'),
@@ -111,7 +111,7 @@ class _QuizScreenState extends State<QuizScreen> {
                         backgroundColor: Colors.black,
                         foregroundColor: Colors.white,
                         textStyle: TextStyle(
-                          fontSize: 20,
+                          fontSize: 17,
                         ),
                       ),
                       child: Text(_questionIndex == questions.length - 1
