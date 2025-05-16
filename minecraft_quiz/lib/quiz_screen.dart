@@ -88,7 +88,7 @@ class _QuizScreenState extends State<QuizScreen> {
             // Градієнт
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Colors.blue, Colors.red],
+            colors: [Colors.green, Colors.lightGreen],
           ),
         ),
         child: Center(
@@ -105,6 +105,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   fontSize: 40,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
+                  
                 ),
                 textAlign: TextAlign.center,
               ),
