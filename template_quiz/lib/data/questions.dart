@@ -3,61 +3,52 @@ import '../models/quiz_result.dart';
 
 final List<Question> questions = [
   Question(
-    questionText: 'Який твій стиль життя?',
+    questionText: 'Як ти реагуєш, коли хтось сумнівається у твоїх силах?',
     answers: [
-      Answer(text: 'Спокійний, стабільний, люблю комфорт', score: 1),
-      Answer(text: 'Динамічний, завжди в русі', score: 2),
-      Answer(text: 'Практичний, але сучасний', score: 3),
-      Answer(text: 'Ексклюзивний, розкіш понад усе', score: 4),
-      Answer(text: 'Екологічний і технологічний', score: 3),
-      Answer(text: 'Готовий до пригод і бездоріжжя', score: 2),
+      Answer(text: 'Доводжу на ділі, хто я є', score: 4),
+      Answer(text: 'Спокійно пояснюю свою позицію', score: 3),
+      Answer(text: 'Ігнорую – мені це не важливо', score: 2),
+      Answer(text: 'Мене це ранить, але мовчу', score: 1),
     ],
   ),
   Question(
-    questionText: 'Що для тебе головне у транспорті?',
+    questionText: 'Що для тебе є джерелом сили?',
     answers: [
-      Answer(text: 'Надійність і зручність', score: 1),
-      Answer(text: 'Швидкість і драйв', score: 2),
-      Answer(text: 'Економність і функціональність', score: 3),
-      Answer(text: 'Статус і імідж', score: 4),
-      Answer(text: 'Новітні технології та екологічність', score: 3),
-      Answer(text: 'Прохідність і витривалість', score: 2),
+      Answer(text: 'Внутрішній спокій', score: 3),
+      Answer(text: 'Моя воля та характер', score: 4),
+      Answer(text: 'Підтримка близьких', score: 2),
+      Answer(text: 'Зовнішнє визнання', score: 1),
     ],
   ),
   Question(
-    questionText: 'Як ти зазвичай проводиш вихідні?',
+    questionText: 'Тобі треба зробити важке рішення. Як ти дієш?',
     answers: [
-      Answer(text: 'Вдома або у родинному колі', score: 1),
-      Answer(text: 'Активно: спорт, тусовки, подорожі', score: 2),
-      Answer(text: 'Спокійно, можливо за містом', score: 3),
-      Answer(text: 'Вишукано: ресторани, театри, події', score: 4),
-      Answer(text: 'Експериментую з новим, навчаюсь', score: 3),
-      Answer(text: 'Подорожую на природу, в гори або ліс', score: 2),
+      Answer(text: 'Шукаю максимум інформації', score: 3),
+      Answer(text: 'Роблю по відчуттю — я довіряю собі', score: 4),
+      Answer(text: 'Раджуся з кимось досвідченим', score: 2),
+      Answer(text: 'Відкладаю, поки не стане легше', score: 1),
     ],
   ),
   Question(
-    questionText: 'Яка твоя улюблена пора року?',
+    questionText: 'Що ти думаєш про силу?',
     answers: [
-      Answer(text: 'Весна — новий початок', score: 1),
-      Answer(text: 'Літо — свобода і драйв', score: 2),
-      Answer(text: 'Осінь — затишок і роздуми', score: 3),
-      Answer(text: 'Будь-яка, якщо з комфортом', score: 4),
-      Answer(text: 'Майбутнє — час не має значення', score: 3),
-      Answer(text: 'Зима — виклики та пригоди', score: 2),
+      Answer(text: 'Це контроль над собою і ситуацією', score: 4),
+      Answer(text: 'Це витривалість і розум', score: 3),
+      Answer(text: 'Це вміння бути добрим', score: 2),
+      Answer(text: 'Це щось, що мають лише обрані', score: 1),
     ],
   ),
   Question(
-    questionText: 'Яка музика тобі більше подобається?',
+    questionText: 'Який ти в конфлікті?',
     answers: [
-      Answer(text: 'Класика або легкий джаз', score: 1),
-      Answer(text: 'Рок або електроніка', score: 2),
-      Answer(text: 'Поп або хіти 2000-х', score: 3),
-      Answer(text: 'Інструментальна або lounge', score: 4),
-      Answer(text: 'Щось нове з Spotify чи YouTube', score: 3),
-      Answer(text: 'Саундтреки до фільмів про подорожі', score: 2),
+      Answer(text: 'Вирішую без емоцій, твердо', score: 4),
+      Answer(text: 'Намагаюсь зрозуміти обидві сторони', score: 3),
+      Answer(text: 'Виходжу з ситуації, уникаючи ескалації', score: 2),
+      Answer(text: 'Підлаштовуюсь, щоб уникнути проблем', score: 1),
     ],
   ),
 ];
+
 
 
 // Утилітний метод для розрахунку порогу
@@ -66,36 +57,33 @@ int calculateThreshold(int totalQuestions, double percentage) {
 }
 
 final List<QuizResult> results = [
-    QuizResult(
-      title: 'Ви - Toyota Camry!',
-      description: 'Ти — як Toyota Camry: спокійний, надійний і практичний. Обираєш комфорт, довговічність і не любиш зайвих ризиків.',
-      imagePath: 'assets/images/camry.png',
-      minScore: calculateThreshold(questions.length, 0.2), // 0% від максимуму
-    ),
-    QuizResult(
-      title: 'Ви - BMW M3!',
-      description: 'Ти — BMW M3: стильний, швидкий і емоційний. Любиш драйв, свободу та вмієш жити на повну.',
-      imagePath: 'assets/images/bmw_m3.png',
-      minScore: calculateThreshold(questions.length, 0.4), // 25% від максимуму
-    ),
-    QuizResult(
-      title: 'Ви - Volkswagen Golf!',
-      description: 'Ти — Golf: стриманий, зручний і універсальний. Знаєш ціну грошам і час не витрачаєш даремно.',
-      imagePath: 'assets/images/golf.png',
-      minScore: calculateThreshold(questions.length, 0.6), // 50% від максимуму
-    ),
-    QuizResult(
-      title: 'Ви - Mercedes-Benz S-Class!',
-      description: 'Ти — Mercedes S-Class: розкіш, елегантність і враження. Усе має бути найвищого класу.',
-      imagePath: 'assets/images/sclass.png',
-      minScore: calculateThreshold(questions.length, 0.8), // 75% від максимуму
-    ),
-    QuizResult(
-      title: 'Ви - Tesla Model 3!',
-      description: 'Ти — Tesla: інноваційний, розумний і завжди крок попереду. Думаєш про майбутнє і обираєш розумні рішення.',
-      imagePath: 'assets/images/tesla1.png',
-      minScore: calculateThreshold(questions.length, 0.9), // 100% від максимуму
-    ),
-  ];
+  QuizResult(
+    title: 'Ти – Потужний Титан!',
+    description: 'Твоя сила – у впевненості, рішучості та вмінні залишатися собою за будь-яких обставин. Ти не просто потужний – ти лідер.',
+    imagePath: 'assets/images/titan.png',
+    minScore: calculateThreshold(questions.length, 0.2),
+  ),
+  QuizResult(
+    title: 'Ти – Стійкий Лідер',
+    description: 'Ти маєш силу волі, витримку та гнучкий розум. У кризі ти зберігаєш холодну голову й ведеш за собою інших.',
+    imagePath: 'assets/images/leader.png',
+    minScore: calculateThreshold(questions.length, 0.4),
+
+  ),
+  QuizResult(
+    title: 'Ти – Прихована Сила',
+    description: 'Твоя потужність не завжди помітна, але вона є. Ти можеш здивувати, коли настане твій момент.',
+    imagePath: 'assets/images/quiet.png',
+    minScore: calculateThreshold(questions.length, 0.6),
+
+  ),
+  QuizResult(
+    title: 'Ти – Сила в процесі',
+    description: 'Ти ще на шляху до повної впевненості. У тобі є іскра – лиш варто її розпалити.',
+    imagePath: 'assets/images/inprogress.png',
+    minScore: calculateThreshold(questions.length, 0.8),
+
+  ),
+];
 
 
