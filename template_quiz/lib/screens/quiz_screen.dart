@@ -67,8 +67,8 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
             end: Alignment.bottomRight,
             colors: [
               // фон додатку
-              Color.fromARGB(255, 55, 202, 255),
-              Color.fromARGB(255, 201, 240, 255),
+              Color.fromARGB(255, 26, 120, 215),
+              Color.fromARGB(255, 66, 165, 245),
             ],
           ),
         ),

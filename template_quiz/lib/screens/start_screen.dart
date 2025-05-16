@@ -23,9 +23,9 @@ class StartScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/bmw_m3.png',
+                'assets/images/orlyk.png',
                 height: 200,
-                color: const Color.fromARGB(150, 255, 255, 255),
+                //color: const Color.fromARGB(150, 255, 255, 255),
               ),
               const SizedBox(height: 40),
               const Text(
