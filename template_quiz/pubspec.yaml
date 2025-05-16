@@ -59,7 +59,47 @@ flutter:
 
   
   assets:
-    - assets/images/quiz-logo.png
+    - assets/images/tun_tun.png
+    - assets/images/bombordilo.png
+    - assets/images/tralalelo.png
+    - assets/images/golubiro.png
+    - assets/images/balerino.png
+    - assets/images/cheese_pizza.png
+    - assets/images/deadpool.png
+    - assets/images/ironman.png
+    - assets/images/flash.png
+    - assets/images/frankivsk.png
+    - assets/images/hawaiian_pizza.png
+    - assets/images/kyiv.png
+    - assets/images/lviv.png
+    - assets/images/pepperoni_pizza.png
+    - assets/images/spicy_pizza.png
+    - assets/images/uzhgorod.png
+    - assets/images/wonderwoman.png
+    - assets/images/apple.png
+    - assets/images/coca_cola.png
+    - assets/images/google.png
+    - assets/images/ikea.png
+    - assets/images/nike.png
+    - assets/images/tesla.png
+    - assets/images/bmw_m3.png
+    - assets/images/camry.png
+    - assets/images/golf.png
+    - assets/images/jeep.png
+    - assets/images/sclass.png
+    - assets/images/tesla1.png
+    - assets/images/apostol.png
+    - assets/images/briukhovetskyi.png
+    - assets/images/doroshenko.png
+    - assets/images/khmelnytskyi.png
+    - assets/images/mazepa.png
+    - assets/images/orlyk.png
+    - assets/images/facebook.png
+    - assets/images/instagram.png
+    - assets/images/linkedin.png
+    - assets/images/tiktok.png
+    - assets/images/twitter.png
+    - assets/images/viber.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

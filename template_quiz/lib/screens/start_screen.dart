@@ -23,7 +23,7 @@ class StartScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/quiz-logo.png',
+                'assets/images/bmw_m3.png',
                 height: 200,
                 color: const Color.fromARGB(150, 255, 255, 255),
               ),
