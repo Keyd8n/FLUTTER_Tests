@@ -6,9 +6,9 @@ class MainMenu extends StatelessWidget {
   const MainMenu({super.key}); // Конструктор
 
   // Налаштування, які можна змінити
-  final String testTitle = "Який ти блок з Minecraft?"; // Назва тесту
+  final String testTitle = "Який ти блок з Minecraft?\n Створений студентами кафедри комп\'ютерних наук"; // Назва тесту
   final String buttonText = "Почати тест"; // Текст кнопки
-  final String imagePath = "assets/fruit_basket.png"; // Шлях до зображення
+  final String imagePath = "assets/quiz_logo2.png"; // Шлях до зображення
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +36,8 @@ class MainMenu extends StatelessWidget {
               Image.asset(
                 // Зображення
                 imagePath, // Шлях до зображення
-                width: 400, // Ширина
-                height: 400, // Висота
+                width: 300, // Ширина
+                height: 300, // Висота
               ),
               const SizedBox(height: 0), // Відступ
               Text(
@@ -46,7 +46,7 @@ class MainMenu extends StatelessWidget {
                 style: const TextStyle(
                   // Стиль тексту
                   fontFamily: 'ComicSans', // Додано шрифт Comic Sans
-                  fontSize: 40, // Розмір шрифту
+                  fontSize: 30, // Розмір шрифту
                   color: Colors.white, // Колір
                   fontWeight: FontWeight.bold, // Жирність
                 ),

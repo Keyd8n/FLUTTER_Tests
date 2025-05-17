@@ -13,13 +13,13 @@ final void Function() startQuiz;
     mainAxisSize: MainAxisSize.min,
     children: [
     Image.asset(
-    'assets/images/quiz-logo.png',
-    width: 200,
-    color: const Color.fromARGB(150, 255, 255, 255),
+    'assets/images/quiz_logo2.png',
+    width: 300,
+    //color: const Color.fromARGB(150, 255, 255, 255),
     ),
     const SizedBox(height: 20),
       Text(
-      'Тест "Яка ти вiдеокарта вiд Gigabyte?"',
+      'Тест "Яка ти вiдеокарта вiд Gigabyte?\n Створений студентами кафедри комп\'ютерних наук',
       style: GoogleFonts.lato(
       color: const Color.fromARGB(255, 237, 223, 252),
       fontSize: 24,

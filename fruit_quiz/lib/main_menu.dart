@@ -6,7 +6,7 @@ class MainMenu extends StatelessWidget {
   const MainMenu({super.key}); // Конструктор
 
   // Налаштування, які можна змінити
-  final String testTitle = "Який ти фрукт? Тест-жарт"; // Назва тесту
+  final String testTitle = "Тест Який ти фрукт? \nСтворений студентами кафедри комп\'ютерних наук"; // Назва тесту
   final String buttonText = "Почати тест"; // Текст кнопки
   final String imagePath = "assets/fruit_basket.png"; // Шлях до зображення
 
@@ -46,7 +46,7 @@ class MainMenu extends StatelessWidget {
                 style: const TextStyle(
                   // Стиль тексту
                   fontFamily: 'ComicSans', // Додано шрифт Comic Sans
-                  fontSize: 40, // Розмір шрифту
+                  fontSize: 30, // Розмір шрифту
                   color: Colors.white, // Колір
                   fontWeight: FontWeight.bold, // Жирність
                 ),

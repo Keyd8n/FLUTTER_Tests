@@ -19,7 +19,6 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/fruit_basket.png
     - assets/lemon.png
     - assets/apple.png
     - assets/banana.png
@@ -27,6 +26,7 @@ flutter:
     - assets/grapes.png
     - assets/kiwi.png
     - assets/pineapple.png
+    - assets/quiz_logo2.png
 
   fonts:
     - family: ComicSans # Назва сімейства шрифту (можете змінити на будь-яку назву)

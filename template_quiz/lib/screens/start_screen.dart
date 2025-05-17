@@ -23,8 +23,8 @@ class StartScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/quiz_logo.png',
-                height: 200,
+                'assets/images/quiz_logo2.png',
+                height: 300,
                 //color: const Color.fromARGB(150, 255, 255, 255),
               ),
               const SizedBox(height: 40),
@@ -39,7 +39,7 @@ class StartScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               const Text(
-                'Пройдіть тест і дізнайтеся, на якого супергероя ви найбільше схожі',
+                'Пройдіть тест і дізнайтеся, \nна якого супергероя ви найбільше схожі.\n\nТест розроблений студентами КПНУ ім. Івана Огієнка.\nКафедра комп\'ютерних наук.\n',
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.white,

@@ -105,6 +105,7 @@ flutter:
     - assets/images/quiet.png
     - assets/images/inprogress.png
     - assets/images/quiz_logo.png
+    - assets/images/quiz_logo2.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

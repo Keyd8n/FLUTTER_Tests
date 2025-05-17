@@ -110,8 +110,15 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Image.asset(
+                'assets/quiz_logo2.png',
+                width: 300,
+                height: 300,
+                fit: BoxFit.contain,
+              ),
+              SizedBox(height: 24),
               Text(
-                'Визнач, хто ти з великих грецьких героїв!',
+                'Визнач, хто ти з великих грецьких героїв!\n\nСтворений студентами кафедри комп\'ютерних наук',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),

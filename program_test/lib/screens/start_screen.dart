@@ -22,7 +22,7 @@ class StartScreen extends StatelessWidget {
                 borderRadius:
                     const BorderRadius.vertical(top: Radius.circular(25)),
                 child: Image.asset(
-                  'assets/images/programming.jpg',
+                  'assets/images/quiz_logo2.png',
                   height: 350,
                   width: 700,
                   fit: BoxFit.cover,
@@ -35,7 +35,7 @@ class StartScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      'Яка ти мова програмування?',
+                      'Яка ти мова програмування?\n\nСтворений студентами кафедри комп\'ютерних наук',
                       style:
                           TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
